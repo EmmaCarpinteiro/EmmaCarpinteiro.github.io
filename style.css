@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}  
+
+/* Estilo do body */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 2pt;
+  margin: 0;
+}
+
+/* Encabezado */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #FFE9C4;
+  color: #513167;
+}
+
+/* Estilo barra navegación */
+.navbar {
+  display: flex;
+  background-color: #FCEDE8;
+  border: solid #513167;
+}
+
+/* Estilo barra navegación: links */
+.navbar a {
+  color: #513167;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Links */
+.navbar a:hover {
+  background-color: #FEE8DF;
+  color: black;
+}
+
+/* Corpo do portafolio */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FCF1E7;
+}
+
+/* Sobre min */
+.main {
+  flex: 70%;
+  padding: 20px;
+}
+
+/* Coñecementos */
+.skills {
+  flex: 70%;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border:none;
+  text-align: center;
+  padding: 8px;
+}
+
+/* Proxectos */
+.proyects {
+  flex: 70%;
+  padding: 20px;
+}
+
+/* Contacto */
+.contact {
+  flex: 70%;
+  padding: 20px;
+}
+
+/* Fake image, just for this example 
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+} */
+
+/* Pé de páxina */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(208, 191, 131);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+}
