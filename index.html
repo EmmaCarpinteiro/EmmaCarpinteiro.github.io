@@ -5,99 +5,105 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/coding.png">
 </head>
 
 <body>
 
-  <!-- Header -->
-  <!-- ola -->
-  <div class="header">
-    <h1>Portafolio</h1>
-    <p>Emma</p>
+  <!-- Encabezado -->
+  <header class="header">
     <img src="/img/command-line.png" alt="imagen" width="100" height="100">
-  </div>
+  </header>
 
-  <!-- Navigation Bar -->
-  <div class="navbar">
-    <a href="#1">Sobre min</a>
-    <a href="#2">Coñecementos</a>
-    <a href="#3">Proxectos</a>
-    <a href="#4">Contacto</a>
-  </div>
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <a href="#1">About me</a>
+    <a href="#2">Skills</a>
+    <a href="#3">Projects</a>
+    <a href="contact.html" target="_blank">Contact</a>
+  </nav>
 
-  <!-- The flexible grid (content) -->
-  <div class="row">
 
-    <div class="main" id="1">
-      <h2>Sobre min</h2>
-      <h5>Descripción</h5>
-      <div class="fakeimg" style="height:500px;">
-        <img src="" alt="imagen" width="800" height="500">
+  <div>
+    <div class="grid-container">
+      
+      <!-- Sobre mi -->
+      <div class="grid-item" id="1">
+        <h2>Emma Carpinteiro</h2>
+        <img class="image" src="img/foto.png" alt="Imagen" width="600">
+      </div>
+      <div class="grid-item">
+        <p>¡Hola! I am Emma
+          I am a robotics and automation technician and now I am going to be a future web application developer.
+          I am focused in new technologies and I am constantly learning. I also consider that I have the capacity of being a flexible and adaptable person.
+          My goal is to progress in this area to solve every kind of problems that arise in front of me. </p>
+      </div>
+    </div>
+
+    <!-- Conocimientos -->
+    <div class="skills" id="2">
+      <h2>Skills</h2>
+      <table>
+        <tr>
+          <th>HTML 5</th>
+          <th>CSS 3</th>
+          <th>Java</th>
+          <th>JavaScript</th>
+          <th>SQL</th>
+          <th>Git & Github</th>
+        </tr>
+        <tr>
+          <td><img src="img/html.png" alt="html" width="70"></td>
+          <td><img src="img/css.png" alt="css" width="70"></td>
+          <td><img src="img/java.png" alt="java" width="70"></td>
+          <td><img src="img/javascript.png" alt="javascript" width="70"></td>
+          <td><img src="img/sql.png" alt="sql" width="70"></td>
+          <td><img src="img/version.png" alt="git" width="70"></td>
+        </tr>
+      </table>
+    </div>
+    <br><br>
+
+    <!-- Proyectos -->
+    <div class="projects" id="3">
+      <h2>Projects</h2>
+      <!-- 1 -->
+      <h4 class="border-2">ABB robot programming</h4>
+      <br>
+      <div style="text-align:center">
+        <video id="video1" class="border" width="420">
+          <source src="videos/VID-20190312-WA0003.mp4" type="video/mp4">
+          Your browser does not support this video.
+        </video>
+        <br><br>
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <button onclick="Muted()">Mute</button>
       </div>
       <br>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      <!-- 2 -->
+      <h4 class="border-2">Website</h4>
+      <br>
+      <p class="center">
+        <a href="http://mercado-divisas.herokuapp.com/" target="_blank">
+          <img src="img/forex.png" alt="forex" width="100">
+        </a><br>
       </p>
       <br>
     </div>
-
-    <div class="skills" id="2">
-      <h2>Coñecementos</h2>
-        <table>
-          <tr>
-            <th>HTML</th>
-            <th>CSS</th>
-            <th>Java</th>
-            <th>JS</th>
-            <th>SQL</th>
-            <th>Git</th>
-          </tr>
-          <tr>
-            <td><img src="img/html.png" alt="html" width="100"></td>
-            <td><img src="img/css.png" alt="css" width="100"></td>
-            <td><img src="img/java.png" alt="java" width="100"></td>
-            <td><img src="img/javascript.png" alt="javascript" width="100"></td>
-            <td><img src="img/sql.png" alt="sql" width="100"></td>
-            <td><img src="img/version.png" alt="javascript" width="100"></td>
-          </tr>
-          <tr>
-            <td>Alto-Medio-Bajo</td>
-            <td>Alto-Medio-Bajo</td>
-            <td>Alto-Medio-Bajo</td>
-            <td>Alto-Medio-Bajo</td>
-            <td>Alto-Medio-Bajo</td>
-            <td>Alto-Medio-Bajo</td>
-          </tr>
-        </table>
-      <br>
-    </div>
-
-    <div class="proyects" id="3">
-      <h2>Proxectos</h2>
-      <h5>Descripción</h5>
-      <ul>
-        <li>Proxecto 1</li>
-        <li>Proxecto 1</li>
-        <li>Proxecto 1</li>
-      </ul>
-      <br>
-    </div>
-
-    <div class="contact" id="4">
-      <h2>Contacto</h2>
-      <h5>Descripción</h5>
-      <br>
-    </div>
-
   </div>
 
-  <!-- Footer -->
+  <!-- Pé de páxina -->
   <div class="footer">
-    <h2>Footer</h2>
+    <h5>© 2022 Emma Carpinteiro</h5>
   </div>
 
 </body>
+
+<script src="funcions.js"></script>
 
 </html>
